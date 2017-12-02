@@ -1,0 +1,27 @@
+{
+  "name": "power-aso",
+  "version": "1.0.0",
+  "description": "A terminal client for App Store Optimization",
+  "main": "index.js",
+  "bin": {
+    "power-aso": "./index.js"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "aso",
+    "app",
+    "store",
+    "optimization"
+  ],
+  "author": "oscarvgg",
+  "license": "MIT",
+  "dependencies": {
+    "aso": "^1.0.0",
+    "cli-table2": "^0.2.0",
+    "commander": "^2.12.2",
+    "memoizee": "^0.4.11",
+    "ora": "^1.3.0"
+  }
+}
