@@ -37,13 +37,13 @@ program
 
 program
   .command('suggest')
-  .description('The scores function gathers several statistics about a keyword and builds difficulty and traffic scores that can be used to evaluate the convenience of targeting that keyword.')
+  .description('The suggest function returns a list of suggestions consisting of the most commonly used keywords among a given set of apps. There are several strategies to select that set of apps.')
   .option('-s, --store <store>', 'i (iTunes connect) or g (Google Play).')
-  .option('--strategy <STRATEGY>', 'the strategy used to get suggestions (i.e. CATEGORY, SIMILAR, COMPETITION, ARBITRARY, KEYWORDS or SEARCH). Defaults to CATEGORY.', parseStrategy)
+  .option('--strategy <STRATEGY>', 'the strategy used to get suggestions (E.g. CATEGORY, SIMILAR, COMPETITION, ARBITRARY, KEYWORDS or SEARCH). Defaults to CATEGORY.', parseStrategy)
   .option('-n, --num <int>', 'the amount of suggestions to get in the results. Defaults to 30.', parseInt)
   .option('-a, --app-id <app-id>', 'store app ID (for iTunes both numerical and bundle IDs are supported). Required for the CATEGORY, SIMILAR and COMPETITION strategies.')
-  .option('-A, --apps <apps>', 'JSON array of store app IDs. Required for the ARBITRARY strategy.', parseStringArray)
-  .option('-k, --keywords <keywords>', 'JSON array of seed keywords. Required for the KEYWORDS and SEARCH strategies.', parseStringArray)
+  .option('-A, --apps <apps>', 'Array of store app IDs separated by comas. Required for the ARBITRARY strategy.', parseStringArray)
+  .option('-k, --keywords <keywords>', 'Array of keywords separated by comas. Required for the KEYWORDS and SEARCH strategies.', parseStringArray)
   .action(args => {
     spinner.start();
     var options = { 

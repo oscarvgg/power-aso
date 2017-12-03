@@ -1,6 +1,6 @@
 {
   "name": "power-aso",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "A terminal client for App Store Optimization",
   "main": "index.js",
   "bin": {
@@ -13,10 +13,24 @@
     "aso",
     "app",
     "store",
-    "optimization"
+    "optimization",
+    "power",
+    "users",
+    "command",
+    "line"
   ],
-  "author": "oscarvgg",
+  "bugs": {
+    "url": "https://github.com/oscarvgg/power-aso/issues"
+  }
+  ,
+  "author": {
+    "name": "Oscar Gonzalez"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscarvgg/power-aso.git"
+  },
   "dependencies": {
     "aso": "^1.0.0",
     "cli-table2": "^0.2.0",
