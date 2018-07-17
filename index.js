@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var Table = require('cli-table2');
+var Table = require('cli-table3');
 var memoize = require('memoizee');
 const program = require('commander');
 
